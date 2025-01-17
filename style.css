@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .main-container {
@@ -70,8 +71,48 @@ a {
     padding: 30px;
     box-sizing: border-box;
 }
+/****** Header ******/
 
-/****** Hebergements ***********/
+#logo {
+    margin-right: 75%;
+}
+
+.navigation {
+    display: flex;
+    justify-content: end;
+
+}
+
+.navigation a, img {
+    padding: 20px;
+}
+
+.navigation a:hover {
+    color: rgb(42,100,240);
+    border-top: 1px solid rgb(42,100,240);
+}
+/***** Formulaire *****/
+
+.formulaire h1,p {
+    margin: 5px;
+}
+
+.rechercher {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.champsaisi,
+.envoi {
+    width: 200px;
+    height: 40px;
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+}
+
+/***** Hebergements ***********/
 .hebergements {
     width: 65%;
 }
