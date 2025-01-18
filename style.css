@@ -96,20 +96,50 @@ a {
 .formulaire h1,p {
     margin: 5px;
 }
-
+form {
+    display: flex;
+}
 .rechercher {
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left: 20px;
 }
 
-.champsaisi,
-.envoi {
+.champsaisi {
+    all: unset;
     width: 200px;
     height: 40px;
     font-size: 1em;
     text-align: center;
     font-weight: bold;
+    border: 1px solid rgb(240, 240, 240);
+
+}
+
+.envoi {
+    all: unset;
+    width: 125px;
+    height: 42px;
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+    background-color:rgb(42,100,240);
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+-webkit-border-radius: 0px 10px 10px 0px;
+-moz-border-radius: 0px 10px 10px 0px;
+}
+
+.rechercher i {
+    background-color:rgb(240, 240, 240);
+    padding: 13px;
+    border-radius: 10px 0px 0px 10px;
+    -webkit-border-radius: 10px 0px 0px 10px;
+    -moz-border-radius: 10px 0px 0px 10px;
+}
+
+#loupe {
+    display: none;
 }
 
 /***** Hebergements ***********/
@@ -204,5 +234,13 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    #loupe { display: block;
+        background-color:rgb(42,100,240);
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+-webkit-border-radius: 0px 10px 10px 0px;
+-moz-border-radius: 0px 10px 10px 0px;
+    }
+    .envoi {display: none;}
     /* ... */
 }
