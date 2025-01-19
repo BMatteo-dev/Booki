@@ -193,13 +193,11 @@ form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 
 .carte { 
-    /* margin: 25px; */
     border: 1px solid white;
     background-color: white;
     border-radius: 20px;
@@ -219,6 +217,35 @@ form {
     padding-left: 10px;
     padding-bottom: 10px;
 }
+
+/***** Activités *****/
+
+.activités {
+    margin: 20px;
+}
+
+.lesActivités {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.aCarte {
+    border-bottom: 1px solid white;
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    overflow: hidden;
+}
+
+.lesActivités img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+}
+
+
 
 /***** Hebergements ***********/
 .hebergements {
