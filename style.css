@@ -74,7 +74,7 @@ a {
 /****** Header ******/
 
 #logo {
-    margin-right: 75%;
+    margin-right: 74%;
 }
 
 .navigation {
@@ -102,7 +102,7 @@ form {
 .rechercher {
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 
 .champsaisi {
@@ -141,6 +141,38 @@ form {
 #loupe {
     display: none;
 }
+
+/***** Filtres *****/
+
+.filtre {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.mesfiltres li{  
+    margin: 5px;
+    padding: 12px;
+}
+
+
+.filtre li:not(:first-child) {
+    border: 2px solid rgb(215, 215, 215);
+    border-radius: 50px 50px 50px 50px;
+}
+
+.filtre li:not(:first-child):hover {
+    background-color: rgb(224, 234, 253);
+}
+
+.filtre i {
+    margin-right: 10px;
+}
+
+
 
 /***** Hebergements ***********/
 .hebergements {
