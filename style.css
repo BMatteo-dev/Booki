@@ -47,7 +47,7 @@ a {
     object-fit: cover;
 }
 
-.card-title {
+h3 {
     font-size: 16px;
 }
 
@@ -83,7 +83,7 @@ a {
 
 }
 
-.navigation a, img {
+.navigation a, .navigation img {
     padding: 20px;
 }
 
@@ -102,7 +102,6 @@ form {
 .rechercher {
     margin-top: 30px;
     margin-bottom: 30px;
-    /* margin-left: 20px; */
 }
 
 .champsaisi {
@@ -144,6 +143,10 @@ form {
 
 /***** Filtres *****/
 
+.mesfiltres {
+    margin-bottom: 50px;
+}
+
 .filtre {
     display: flex;
     list-style: none;
@@ -158,7 +161,6 @@ form {
     padding: 12px;
 }
 
-
 .filtre li:not(:first-child) {
     border: 2px solid rgb(215, 215, 215);
     border-radius: 50px 50px 50px 50px;
@@ -172,7 +174,51 @@ form {
     margin-right: 10px;
 }
 
+/***** Hebergements Marseille *****/
 
+.hebergements h2 {
+    margin-bottom: 30px;
+}
+
+.hotelMarseille img {
+    width: 200px;
+    height: 100px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+    padding: 5px;
+}
+
+.hotelMarseille {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
+}
+
+
+.carte { 
+    /* margin: 25px; */
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    margin-bottom: 30px;
+}
+
+.carteText h3{
+    margin: 5px;
+}
+
+.carteNote {
+    margin-left: 5px;
+}
+
+.carteContenu {
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
 
 /***** Hebergements ***********/
 .hebergements {
