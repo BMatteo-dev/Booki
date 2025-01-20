@@ -74,7 +74,6 @@ h3 {
 /****** Header ******/
 
 #logo {
-    /* margin-right: 1000px; */
     padding-left: 5px;
 }
 
@@ -148,17 +147,23 @@ form {
 
 /***** Filtres *****/
 
+#monTitre {
+    padding-top: 28px;
+}
+
 .mesfiltres {
     margin-bottom: 50px;
+    list-style: none;
+    font-size: 1em;
+    font-weight: bold;
+    display: flex;
 }
 
 .filtre {
     display: flex;
     list-style: none;
     padding: 0;
-    font-size: 1em;
     text-align: center;
-    font-weight: bold;
 }
 
 .mesfiltres li{  
@@ -166,12 +171,12 @@ form {
     padding: 12px;
 }
 
-.filtre li:not(:first-child) {
+.filtre li {
     border: 2px solid rgb(215, 215, 215);
     border-radius: 50px 50px 50px 50px;
 }
 
-.filtre li:not(:first-child):hover {
+.filtre li:hover {
     background-color: rgb(224, 234, 253);
 }
 
@@ -378,6 +383,42 @@ form {
 -webkit-border-radius: 0px 10px 10px 0px;
 -moz-border-radius: 0px 10px 10px 0px;
     }
-    .envoi {display: none;}
-    /* ... */
+
+    .envoi {
+        display: none;
+    }
+
+    .main-container {
+        padding: 0 25px;
+    }
+
+    #logo {
+        width: 25%;
+        height: 25%;
+        margin-left: 35%;
+    }
+    
+    .mesfiltres {
+        margin-bottom: 0;
+        display: block;
+    }
+
+    .filtre {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80%;
+    }
+
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+
+    .colonneFooter{
+        flex-direction: column;
+    }
+
+    .populaires-cards {
+        display: block;
+        justify-content: center;
+    }
 }
