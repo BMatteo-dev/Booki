@@ -133,6 +133,18 @@ form {
 -moz-border-radius: 0px 10px 10px 0px;
 }
 
+#info {
+    padding-bottom: 20px;
+}
+
+#i{
+    padding: 5px;
+    margin-right: 15px;
+    margin-left: 5px;
+    border: 1px solid rgb(242, 242, 242);
+    border-radius: 200px;
+}
+
 .rechercher i {
     background-color:rgb(240, 240, 240);
     padding: 13px;
@@ -152,7 +164,7 @@ form {
 }
 
 .mesfiltres {
-    margin-bottom: 50px;
+    margin-bottom: 15px;
     list-style: none;
     font-size: 1em;
     font-weight: bold;
@@ -350,9 +362,39 @@ form {
         width: 100%;
     }
 
+    .hotelMarseille {
+        margin: 5%;
+    }
+
+    .activités {
+        padding-top: 20px;
+        width: 100%;
+        height: 100%;
+    }
+
+    #activitéDeMarseille {
+        padding-bottom: 20px;
+    }
+
+    .lesActivités {
+        flex-wrap: nowrap;
+    }
+
+    .aCarte {
+        margin-right: 30px;
+    }
+
+    .aCarte img {
+        height: 180px;
+    }
+
     .populaires {
         width: 100%;
         margin-top: 50px;
+    }
+
+    .mesfiltres {
+        display: block;
     }
 
     .populaires-cards {
@@ -379,25 +421,79 @@ form {
     #loupe { display: block;
         background-color:rgb(42,100,240);
     color: white;
-    border-radius: 0px 10px 10px 0px;
--webkit-border-radius: 0px 10px 10px 0px;
--moz-border-radius: 0px 10px 10px 0px;
+    border-radius: 15px;
+    position: relative;
+    right: 15px;
+    box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.3);
     }
 
     .envoi {
         display: none;
     }
+    /* General */
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .populaires {
+        width: 100%;
+    }
 
     .main-container {
-        padding: 0 25px;
+        padding: 0;
     }
+    
+    h1 {
+        padding: 0 10px;
+    }
+    /* Nav */
+
 
     #logo {
         width: 25%;
         height: 25%;
         margin-left: 35%;
     }
-    
+
+    .navigation {
+        display: block;
+    }
+
+    #option {
+        margin-left: 20%;
+    }
+
+    .liens a {
+        padding-bottom: 10px;
+    }
+
+    .liens {
+        border-bottom: 1px solid rgb(240, 240, 240);
+        padding-bottom: 10px;
+    }
+
+    .liens a:hover {
+        border: 0;
+        border-bottom: 1px solid rgb(42,100,240);
+    }
+    /* Formulaire */
+
+    .formulaire p {
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+
+    form {
+        justify-content: center;
+
+    }
+
+    .champsaisi {
+        width: 60%;
+    }
+    /* Filtres */
+
     .mesfiltres {
         margin-bottom: 0;
         display: block;
@@ -406,15 +502,53 @@ form {
     .filtre {
         flex-wrap: wrap;
         justify-content: center;
-        width: 80%;
     }
+
+    .filtre li {
+        width: 30%;
+        height: 25px;
+    }
+    /* Les plus populaires */
 
     .hebergements-and-populaires {
         flex-direction: column-reverse;
     }
 
+    .hebergements-and-populaires section {
+        border-radius: 0;
+    }
+
+    .hebergements-and-populaires .hebergements {
+        background-color: white;
+    }
+    /* Marseille */
+
+    .hotelMarseille{
+        display: block;
+    }
+
+    .hotelMarseille img{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    /* Les activités */
+
+    .lesActivités {
+        display: block;
+    }
+
+    .lesActivités img {
+        width: 100%;
+        height: 100px;
+    }
+
+    .aCarte {
+        margin-bottom:20px;
+    }
+
     .colonneFooter{
         flex-direction: column;
+        padding: 0;
     }
 
     .populaires-cards {
